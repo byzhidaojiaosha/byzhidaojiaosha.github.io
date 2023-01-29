@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://blog.ncwzdlsd.top</id>
+    <title>ncwzdlsd的博客精选</title>
+    <updated>2023-01-29T02:49:53.666Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://blog.ncwzdlsd.top"/>
+    <link rel="self" href="https://blog.ncwzdlsd.top/atom.xml"/>
+    <subtitle>这里是ncwzdlsd的博客精选，时不时会加一些主站好的文章进来，主站请看https://ncwzdlsd.top</subtitle>
+    <logo>https://blog.ncwzdlsd.top/images/avatar.png</logo>
+    <icon>https://blog.ncwzdlsd.top/favicon.ico</icon>
+    <rights>All rights reserved 2023, ncwzdlsd的博客精选</rights>
+    <entry>
+        <title type="html"><![CDATA[我要学的]]></title>
+        <id>https://blog.ncwzdlsd.top/post/todo/</id>
+        <link href="https://blog.ncwzdlsd.top/post/todo/">
+        </link>
+        <updated>2023-01-27T02:54:21.000Z</updated>
+        <content type="html"><![CDATA[<h2 id="c程序设计">C++程序设计</h2>
+<h3 id="stl">STL</h3>
+<ul>
+<li>元组（<code>tuple</code>）</li>
+</ul>
+<h2 id="数据结构">数据结构</h2>
+<h3 id="特殊树">特殊树</h3>
+<ul>
+<li>树状数组</li>
+<li><s>字典树（trie树）</s></li>
+<li>笛卡尔树</li>
+<li>二叉平衡树AVL、treap、splay</li>
+<li>基环树</li>
+</ul>
+<h3 id="常见图">常见图</h3>
+<ul>
+<li>重连通图</li>
+<li><s>强连通图</s></li>
+</ul>
+<h3 id="哈希表">哈希表</h3>
+<ul>
+<li>数值哈希函数构造</li>
+<li>排列哈希函数构造</li>
+</ul>
+<h2 id="算法">算法</h2>
+<h3 id="排序算法">排序算法</h3>
+<ul>
+<li>树形选择排序</li>
+<li>基数排序</li>
+<li>堆排序</li>
+</ul>
+<h3 id="字符串相关算法">字符串相关算法</h3>
+<ul>
+<li><s>字符串匹配算法——KMP</s></li>
+</ul>
+<h3 id="搜索算法">搜索算法</h3>
+<ul>
+<li>启发式搜索</li>
+<li>双向宽度优先搜索</li>
+<li>迭代加深搜索</li>
+<li>搜索对象的压缩存储</li>
+</ul>
+<h3 id="图论算法">图论算法</h3>
+<ul>
+<li><s>Prim和kurskal等求最小生成树算法</s></li>
+<li>求次小生成树算法</li>
+<li>求单元次最短路径算法</li>
+<li>Floyd-Warshall算法求任意两点间的最短路和传递闭包</li>
+<li>有向无环图的拓补排序算法</li>
+<li>二分图的构造及其判定算法</li>
+<li>最近公共祖先</li>
+<li><s>求强连通分量算法</s></li>
+<li><s>强连通分量的缩点算法</s></li>
+<li><s>求割点、割边算法</s></li>
+</ul>
+<h3 id="动态规划">动态规划</h3>
+<ul>
+<li>树型动态规划</li>
+<li>动态规划的常用优化</li>
+</ul>
+<h2 id="数学">数学</h2>
+<h3 id="高中数学">高中数学</h3>
+<ul>
+<li>解析几何</li>
+<li>立体几何</li>
+</ul>
+<h3 id="初等数论">初等数论</h3>
+<ul>
+<li>威尔逊定理</li>
+<li>扩展欧几里得算法</li>
+<li>孙子定理</li>
+</ul>
+<h3 id="组合数学">组合数学</h3>
+<ul>
+<li><s>鸽巢原理</s></li>
+<li>错排列</li>
+</ul>
+<h3 id="线性代数">线性代数</h3>
+<ul>
+<li>矩阵概念</li>
+<li>特殊矩阵：系数矩阵、三角矩阵、对称矩阵</li>
+<li>矩阵的初等变换</li>
+<li>矩阵的加减乘和转置运算</li>
+<li>线性方程组的高斯消元法</li>
+</ul>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[背包问题详解]]></title>
+        <id>https://blog.ncwzdlsd.top/post/bags/</id>
+        <link href="https://blog.ncwzdlsd.top/post/bags/">
+        </link>
+        <updated>2023-01-27T02:18:03.000Z</updated>
+        <content type="html"><![CDATA[<blockquote>
+<p>前段时间学背包问题的时候发现的一篇学长的宝藏博客QwQ，写得真的好</p>
+</blockquote>
+<h3 id="背包问题">背包问题</h3>
+<h4 id="01背包">01背包</h4>
+<p><strong>问题简述</strong>：有m个物品待放入一个容量为V的背包，每件物品都有其对应的体积w与价值v，从中选取一些物品放入背包，使得物品总价值最大。</p>
+<p><strong>算法思路</strong>：考虑动态规划，令f(i,j)为只考虑前i件物品，背包容量为j时能得到的最大价值。那么当只考虑第i件物品放不放时，便有以下两种情况：</p>
+<p>1，第i件物品体积大于当前背包容量，不放：<strong>f(i,j)=f(i-1,j)</strong>；</p>
+<p>2，第i件物品体积小于等于当前背包容量，则考虑放与不放哪个更优：</p>
+<p><strong>f(i,j)=max(f(i-1,j),f(i-1,j-w[i])+v[i])</strong></p>
+<p>那么就得到核心代码：</p>
+<pre><code class="language-cpp">for(int i=1;i&lt;=m;i++)
+    for(int j=1;j&lt;=V;j++)
+    {
+       if(j=w[i]) 
+           f[i][j]=max(f[i-1][j],f[i-1][j-w[i]]+v[i]);
+       else 
+           f[i][j]=f[i-1][j];
+    }
+</code></pre>
+<p>观察状态转移方程式，我们发现，对第i件物品的选择只与对前一件物品的选择有关，于是考虑滚动数组优化空间。</p>
+<p>注意：当使用滚动数组时，第二层<strong>循环应由V到w[i]</strong>。这是因为在状态转移时用到的背包容量均小于等于j，倒着循环可以保证<strong>j前面都是只考虑i-1件物品时的数据，而j后面是更新过的前i件物品的数据</strong>，这样顺带保证了当j&lt;w[i]，f(i,j)=f(i-1,j)。</p>
+<pre><code class="language-cpp">for(int i=1;i&lt;=m;i++)
+	for(int j=V;j&gt;=w[i];j--)
+   		f[j]=max(f[j],f[j-w[i]]+v[i]);
+</code></pre>
+<p>练手板子题：<a href="https://www.luogu.com.cn/problem/P1048" title="传送门">传送门</a></p>
+<h5 id="01背包pro">01背包Pro</h5>
+<p>恰好为<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>m</mi></mrow><annotation encoding="application/x-tex">m</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">m</span></span></span></span>。</p>
+<p><code>f[0]</code>为<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>0</mn></mrow><annotation encoding="application/x-tex">0</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">0</span></span></span></span>，其余为<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>−</mo><mi mathvariant="normal">∞</mi></mrow><annotation encoding="application/x-tex">-\infty</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.66666em;vertical-align:-0.08333em;"></span><span class="mord">−</span><span class="mord">∞</span></span></span></span>。</p>
+<h4 id="完全背包">完全背包</h4>
+<p><strong>问题简述</strong>：有m种物品待放入一个容量为V的背包，每种物品都有无穷多件且有其对应的体积w与价值v，从中选取一些物品放入背包，使得物品总价值最大。</p>
+<p><strong>算法思路</strong>：在01背包的基础上，由于每种物品都能被重复选择，考虑从1开始枚举每件物品被选择的次数k直到当前物品所占体积超过容量j，则有：<strong>f(i,j)=max(f(i,j),f(i,j-k*w[i])+k*v[i])</strong>。由于在每次循环中讨论的都是第i件物品的选择次数，故数组第一维为i，这也决定了在每次对j进行枚举后要将f(i,j)初始化：<strong>f(i,j)=f(i-1,j)</strong>。</p>
+<p>上核心代码：</p>
+<pre><code class="language-cpp">for(int i=1;i&lt;=m;i++)
+	for(int j=1;j&lt;=V;j++)
+	{
+        f[i][j]=f[i-1][j];
+        for(int k=1;k*w[i]&lt;=j;k++)
+                f[i][j]=max(f[i][j],f[i][j-k*w[i]]+k*v[i]);
+	}
+</code></pre>
+<p>观察状态转移方程式，参照01背包的思想再次考虑滚动数组优化：</p>
+<p>不难发现，完全背包的第二层循环是无需倒着枚举的。如上文所说，在每次对k进行枚举时讨论的都是对第i件物品的选择，故j前面的数据应为只考虑前i件物品时的数据，所以应<strong>正着循环</strong>。</p>
+<p>再考虑对k的枚举。每次循环都是在前一次循环的基础上多选择一件物品i放入背包，所以可以考虑变乘为加：<strong>f(j)=max(f(j),f(j-w[i])+v[i])</strong>，进一步优化时间。</p>
+<pre><code class="language-cpp">for(int i=1;i&lt;=m;i++)
+	for(int j=w[i];j&lt;=V;j++)
+		f[j]=max(f[j],f[j-w[i]]+v[i]);
+</code></pre>
+<p>日常板子题时刻：<a href="https://www.luogu.com.cn/problem/P1616" title="传送门">传送门</a></p>
+<p><s>（不开longlong见祖宗哦</s></p>
+<h4 id="多重背包">多重背包</h4>
+<p><strong>问题简述</strong>：有n种物品待放入一个容量为V的背包，每种物品都有其对应的数量m，体积w与价值v，从中选取一些物品放入背包，使得物品总价值最大。</p>
+<p><strong>算法思路</strong>：由于不能无限选择，这个问题又变回了01背包，只是加了对k的枚举。当我们熟练掌握前两种背包，想写出来一个多重背包也就不难了。</p>
+<p>核心代码又来了。</p>
+<pre><code class="language-cpp">for(int i=1;i&lt;=n;i++)
+	for(int j=V;j&gt;=w[i];j--)
+		for(int k=1;k&lt;=m[i]&amp;&amp;k*w[i]&lt;=j;k++)
+			f[j]=max(f[j],f[j-k*w[i]]+k*v[i]);
+</code></pre>
+<p>我们发现，由于物品有数量的限制，第三层循环无法删去，那么又如何对时间进行优化呢？</p>
+<p>此时可以考虑使用二进制，由于<span class="katex"><span class="katex-mathml"><math><semantics><mrow><msup><mn>2</mn><mn>0</mn></msup><mo>+</mo><msup><mn>2</mn><mn>1</mn></msup><mo>+</mo><mo>…</mo><mo>…</mo><mo>+</mo><msup><mn>2</mn><mi>k</mi></msup></mrow><annotation encoding="application/x-tex">2^0+2^1+……+2^k</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.897438em;vertical-align:-0.08333em;"></span><span class="mord"><span class="mord">2</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">0</span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.897438em;vertical-align:-0.08333em;"></span><span class="mord"><span class="mord">2</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.66666em;vertical-align:-0.08333em;"></span><span class="minner">…</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="minner">…</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.849108em;vertical-align:0em;"></span><span class="mord"><span class="mord">2</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.849108em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight" style="margin-right:0.03148em;">k</span></span></span></span></span></span></span></span></span></span></span>可以表示<span class="katex"><span class="katex-mathml"><math><semantics><mrow><msup><mn>2</mn><mrow><mi>k</mi><mo>+</mo><mn>1</mn></mrow></msup><mo>−</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">2^{k+1}-1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.9324379999999999em;vertical-align:-0.08333em;"></span><span class="mord"><span class="mord">2</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8491079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight" style="margin-right:0.03148em;">k</span><span class="mbin mtight">+</span><span class="mord mtight">1</span></span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">1</span></span></span></span>之内的所有数，故m件物品一定可以进行二进制拆分成许多堆物品，每堆<span class="katex"><span class="katex-mathml"><math><semantics><mrow><msup><mn>2</mn><mi>n</mi></msup></mrow><annotation encoding="application/x-tex">2^n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.664392em;vertical-align:0em;"></span><span class="mord"><span class="mord">2</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.664392em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">n</span></span></span></span></span></span></span></span></span></span></span>件又能看作一件质量为<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>w</mi><mo>×</mo><msup><mn>2</mn><mi>n</mi></msup></mrow><annotation encoding="application/x-tex">w\times2^n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.66666em;vertical-align:-0.08333em;"></span><span class="mord mathdefault" style="margin-right:0.02691em;">w</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.664392em;vertical-align:0em;"></span><span class="mord"><span class="mord">2</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.664392em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">n</span></span></span></span></span></span></span></span></span></span></span>，价值为<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>v</mi><mo>×</mo><msup><mn>2</mn><mi>n</mi></msup></mrow><annotation encoding="application/x-tex">v\times2^n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.66666em;vertical-align:-0.08333em;"></span><span class="mord mathdefault" style="margin-right:0.03588em;">v</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.664392em;vertical-align:0em;"></span><span class="mord"><span class="mord">2</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.664392em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">n</span></span></span></span></span></span></span></span></span></span></span>的物品，使复杂度优化一个<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>log</mi><mo>⁡</mo></mrow><annotation encoding="application/x-tex">\log</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="mop">lo<span style="margin-right:0.01389em;">g</span></span></span></span></span>。</p>
+<p>二进制拆分模拟如下：</p>
+<pre><code class="language-cpp">int vv,ww,mm,cnt=0;
+for(int i=1;i&lt;=n;i++)
+{
+	vv=read(),ww=read(),mm=read();
+	for(int j=1;j&lt;=mm;j&lt;&lt;=1)
+	{
+		v[++cnt]=vv*j,w[cnt]=ww*j;
+		mm-=j;
+	}
+	if(mm) 
+		v[++cnt]=vv*mm,w[cnt]=ww*mm;
+}
+</code></pre>
+<p>然后就是朴实无华01背包啦。</p>
+<p>板子：<a href="https://www.luogu.com.cn/problem/P1776" title="传送门">传送门</a></p>
+<p><s>（几天前用快读不加二进制优化还能卡过呢qwq</s></p>
+]]></content>
+    </entry>
+</feed>
